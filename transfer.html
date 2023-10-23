@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Banking-Transfer</title>
+    <style type="text/css">
+        h1,h2,h3,h4,h5,h6,p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(200, 200, 200);
+        }
+        div{
+            background-color: rgba(60, 60, 60, 0.9);
+            border-radius: 20px;
+        }
+        .submit{
+            background-color: rgb(40, 40, 40);
+            border: none;
+            border-radius: 20px;
+            color: rgb(200, 200, 200);
+            width: 100px;
+            height: 40px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(31, 70, 132);">
+    <a href="dashboard.html"><img src="back-arrow.png" style="width: 35px; float: left;"></a><h1 style="font-size: 40spx; margin-left: 20px;">Transfer</h1>
+    <center><div style="width: 85%; margin-top: 20px; text-align: left; padding: 10px;">
+        <form>
+            <label for="phone-number"><h3>Enter Recipient Phone Number:</h3></label>
+            <input type="text" inputmode="numeric" name="phone-number" maxlength="15" required>
+            <br><br>
+            <label for="amount"><h3>Enter Transfer Amount (Rp):</h3></label>
+            <input type="text" inputmode="numeric" name="amount" maxlength="7" required>
+            <br><br>
+            <label for="pin"><h3>Enter PIN:</h3></label>
+            <input type="password" inputmode="numeric" name="pin" maxlength="4" required>
+            <br><br>
+            <input type="submit" value="Transfer" class="submit">
+        </form>
+    </div></center>
